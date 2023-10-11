@@ -44,7 +44,7 @@ button.addEventListener("click", function() {
         });
     }
     
-    // Mostrar u ocultar el reloj según el estado de los botones secundarios
+    // Mostrar u ocultar el reloj segÃºn el estado de los botones secundarios
     const reloj = document.getElementById("reloj");
     reloj.style.display = alMenosUnBotonSecundarioVisible() ? "block" : "none";
 });
@@ -71,7 +71,7 @@ function cambiarFondo() {
         fondoActual = "pc_on";
         setTimeout(function() {
             cambiarFondoPersonalizado();
-        }, 000);
+        }, 6000);
     } else {
         cambiarFondoPersonalizado();
     }
@@ -339,10 +339,10 @@ document.addEventListener("DOMContentLoaded", function () {
         function actualizarLimites() {
             ventanaAncho = window.innerWidth;
             ventanaAlto = window.innerHeight;
-            var limiteIzquierdo = (ventanaAncho + imagenAncho) / 2; // Centrar horizontalmente y reducir el límite izquierdo
-             limiteSuperior = (ventanaAlto + imagenAlto) / 2; // Centrar verticalmente y reducir el límite superior
-             limiteDerecho = limiteIzquierdo + imagenAncho; // Reducir el límite derecho
-             limiteInferior = limiteSuperior + imagenAlto; // Reducir el límite inferior
+            var limiteIzquierdo = (ventanaAncho + imagenAncho) / 2; // Centrar horizontalmente y reducir el lÃ­mite izquierdo
+             limiteSuperior = (ventanaAlto + imagenAlto) / 2; // Centrar verticalmente y reducir el lÃ­mite superior
+             limiteDerecho = limiteIzquierdo + imagenAncho; // Reducir el lÃ­mite derecho
+             limiteInferior = limiteSuperior + imagenAlto; // Reducir el lÃ­mite inferior
 
             console.log("limiteIzquierdo:", limiteIzquierdo);
             console.log("limiteSuperior:", limiteSuperior);
